@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras — VTRSTORE</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">VTRSTORE</a>
+            <input type="checkbox" id="menu-check" class="menu-check">
+            <label for="menu-check" class="menu-toggle">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </label>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="colecao.html">Coleção</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#" style="color: var(--accent-color);">Carrinho</a></li>
+                    <li><a href="#" class="nav-cta">Drops</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-page">
+            
+            <div class="section-header" style="max-width: var(--max-width); margin: 0 auto 3rem auto; padding: 0 var(--spacing-default);">
+                <h1 style="font-size: 3rem;">MEU CARRINHO</h1>
+            </div>
+
+            <div class="cart-container" style="max-width: var(--max-width); margin: 0 auto; padding: 0 var(--spacing-default);">
+
+                <div class="cart-items">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th class="table-header">Produto</th>
+                                <th class="table-header">Preço</th>
+                                <th class="table-header">Quantidade</th>
+                                <th class="table-header">Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-list">
+                            </tbody>
+                    </table>
+                    
+                    <div id="empty-cart-message">
+                        Seu carrinho está vazio. Comece a comprar!
+                    </div>
+                </div>
+
+                <div class="cart-summary">
+                    <h3>RESUMO DO PEDIDO</h3>
+                    
+                    <div class="summary-line">
+                        <span>Subtotal</span>
+                        <span id="subtotal">R$ 0,00</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Frete</span>
+                        <span id="shipping">R$ 25,00</span>
+                    </div>
+                    <div class="summary-line total-line">
+                        <span>TOTAL</span>
+                        <span id="final-total">R$ 25,00</span>
+                    </div>
+
+                    <a href="#" class="nav-cta" style="width: 100%; text-align: center;">FINALIZAR COMPRA</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <div class="foot-brand">VTRSTORE</div>
+                <p>Streetwear Atitude — autenticidade e design limpo.</p>
+                <div class="socials">
+                    <a href="#">IG</a><a href="#">TT</a><a href="#">YT</a>
+                </div>
+            </div>
+            <div>
+                <h4>Suporte</h4>
+                <p><a href="#">Trocas e devoluções</a><br><a href="#">Envios e prazos</a><br><a href="#">Contato</a></p>
+            </div>
+            <div class="newsletter">
+                <h4>Assine o newsletter</h4>
+                <p>Receba drops e cupons exclusivos.</p>
+                <input type="email" placeholder="Seu e-mail" />
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Dados de simulação para os produtos
+        const sampleProducts = [
+            { id: 1, name: "Camiseta Black Ice I", price: 149.00, img: "image/dropblackice1.jpg", size: "M" },
+            { id: 2, name: "Calça Streetwear cargo", price: 200.00, img: "image/calçasarja.jpg", size: "G" },
+            { id: 3, name: "Jaqueta Pelea", price: 299.00, img: "image/jaquetacargo.jpg", size: "P" }
+        ];
+
+        let cartItems = [];
+        
+        // Elementos DOM
+        const cartList = document.getElementById('cart-list');
+        const emptyMessage = document.getElementById('empty-cart-message');
+        const subtotalEl = document.getElementById('subtotal');
+        const finalTotalEl = document.getElementById('final-total');
+        const shippingCost = 25.00; 
+
+        // --- FUNÇÕES DE LÓGICA DO CARRINHO ---
+
+        function renderCart() {
+            cartList.innerHTML = '';
+            let subtotal = 0;
+
+            if (cartItems.length === 0) {
+                emptyMessage.style.display = 'block';
+                subtotalEl.textContent = 'R$ 0,00';
+                finalTotalEl.textContent = 'R$ 25,00'; 
+                return;
+            }
+            emptyMessage.style.display = 'none';
+
+            cartItems.forEach((item, index) => {
+                const totalItemPrice = item.price * item.quantity;
+                subtotal += totalItemPrice;
+                
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>
+                        <div class="product-line" style="display: flex; align-items: center; gap: 1rem;">
+                            <img src="${item.img}" alt="${item.name}" style="width: 80px; height: 100px; object-fit: cover;">
+                            <div class="product-info">
+                                <a href="#">${item.name}</a>
+                                <small style="display: block;">Tamanho: ${item.size} | Cor: ${item.color || 'Preto'}</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="price-col">R$ ${item.price.toFixed(2).replace('.', ',')}</td>
+                    <td>
+                        <div class="quantity-control" style="display: flex; align-items: center; border: 1px solid #ddd;">
+                            <button class="qty-minus" data-index="${index}" style="padding: 0.5rem; border: none; background: none;">-</button>
+                            <input type="number" value="${item.quantity}" min="1" max="10" readonly style="width: 30px; text-align: center; border: none;">
+                            <button class="qty-plus" data-index="${index}" style="padding: 0.5rem; border: none; background: none;">+</button>
+                        </div>
+                    </td>
+                    <td class="price-col">R$ ${totalItemPrice.toFixed(2).replace('.', ',')}</td>
+                    <td><span class="remove-btn" data-index="${index}" title="Remover" style="cursor: pointer;">&times;</span></td>
+                `;
+                cartList.appendChild(row);
+            });
+
+            const finalTotal = subtotal + shippingCost;
+            subtotalEl.textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+            finalTotalEl.textContent = `R$ ${finalTotal.toFixed(2).replace('.', ',')}`;
+
+            setupCartListeners();
+        }
+
+        function addItemToCart(product) {
+            const existingItem = cartItems.find(item => item.id === product.id);
+
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cartItems.push({ ...product, quantity: 1 });
+            }
+            renderCart();
+        }
+
+        function setupCartListeners() {
+            document.querySelectorAll('.qty-plus').forEach(button => {
+                button.onclick = (e) => {
+                    const index = e.target.getAttribute('data-index');
+                    cartItems[index].quantity += 1;
+                    renderCart();
+                };
+            });
+
+            document.querySelectorAll('.qty-minus').forEach(button => {
+                button.onclick = (e) => {
+                    const index = e.target.getAttribute('data-index');
+                    if (cartItems[index].quantity > 1) {
+                        cartItems[index].quantity -= 1;
+                    }
+                    renderCart();
+                };
+            });
+
+            document.querySelectorAll('.remove-btn').forEach(button => {
+                button.onclick = (e) => {
+                    const index = e.target.getAttribute('data-index');
+                    cartItems.splice(index, 1);
+                    renderCart();
+                };
+            });
+        }
+
+        // --- INICIALIZAÇÃO (Exemplo com 2 itens no carrinho) ---
+        
+        cartItems = [
+            { id: 1, name: "Camiseta Black Ice I", price: 149.00, img: "image/dropblackice1.jpg", size: "M", quantity: 1, color: "Preto" },
+            { id: 2, name: "Calça Streetwear cargo", price: 200.00, img: "image/calçasarja.jpg", size: "G", quantity: 2, color: "Cinza" },
+        ];
+        
+        renderCart();
+    </script>
+</body>
+</html>

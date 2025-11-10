@@ -1,0 +1,320 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VTRSTORE — Coleções Street Clean</title>
+
+    <!-- Fontes (Carregadas via CSS no bloco <style>) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"
+    
+    <!-- Ícones para Redes Sociais e Botões -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div href="index.html" class="logo">VTRSTORE</div>
+
+            <!-- Mobile Menu Toggles (Pure CSS) -->
+            <input type="checkbox" id="menu-check" class="menu-check">
+            <label for="menu-check" class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li class="dropdown-trigger">
+                        <a href="#">VER TODOS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Coleções</a></li>
+                            <li><a href="camisetas.html">Camisetas</a></li>
+                            <li><a href="moletons.html">Moletons</a></li>
+                            <li><a href="jaquetas.html">Jaquetas</a></li>
+                            <li><a href="calcas.html">Calças</a></li>
+                            <li><a href="shorts.html">Shorts</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="colecao.html">Coleções</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="colecao.html">Contato</a></li>
+                    <li><a class="nav-cta" href="#">Drops</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Carousel -->
+    <div class="carousel-container">
+        <div id="carousel-slide" class="carousel-slide">
+            
+            <!-- Item 1: Nova Coleção -->
+            <div class="carousel-item">
+                <!-- Imagem Placeholder -->
+                <img src="https://placehold.co/1200x700/1a1a1a/ff0000?text=DROP+REBEL+YELL" onerror="this.onerror=null; this.src='https://placehold.co/1200x700/1a1a1a/ff0000?text=DROP+REBEL+YELL';" alt="Nova Coleção Street">
+                <div class="banner-content">
+                    <h1>DROP 'REBEL YELL'</h1>
+                    <p>Rebeldia, atitude e autenticidade. O inverno é nosso.</p>
+                    <a href="#colecoes">Explorar Coleção</a>
+                </div>
+            </div>
+
+            <!-- Item 2: Verão -->
+            <div class="carousel-item">
+                 <!-- Imagem Placeholder -->
+                <img src="https://placehold.co/1200x700/333/ffffff?text=VER%C3%83O+2025+URBANO" onerror="this.onerror=null; this.src='https://placehold.co/1200x700/333/ffffff?text=VER%C3%83O+2025+URBANO';" alt="Promoção de Verão">
+                <div class="banner-content">
+                    <h1>FRESH SUMMER 2025</h1>
+                    <p>Peças leves e oversized para o calor urbano.</p>
+                    <a href="#colecoes">Conferir Drops</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões do Carrossel -->
+        <button id="prevBtn" class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+        <button id="nextBtn" class="carousel-btn next" aria-label="Próximo">&#10095;</button>
+
+        <!-- Pontos de Navegação -->
+        <div id="carousel-dots-container" class="carousel-dots-container">
+            <!-- Os pontos serão gerados aqui pelo JS -->
+        </div>
+    </div>
+
+    <!-- Seção Principal: Coleções -->
+    <section id="colecoes">
+        <div class="section-header">
+            <h2>Coleções em Destaque</h2>
+            <a href="#">Ver Todos &rarr;</a>
+        </div>
+
+        <!-- Grid de Coleções -->
+        <div class="grid">
+
+            <!-- Card 1: REBEL YELL -->
+            <a href="#" class="card">
+                <img src="https://placehold.co/600x400/1a1a1a/ff0000?text=REBEL+YELL" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a1a1a/ff0000?text=REBEL+YELL';" alt="Coleção Rebel Yell">
+                <div class="card-body">
+                    <span class="light-text-color">DROP 01 | 2025</span>
+                    <h4>REBEL YELL Collection</h4>
+                    <p>Jaquetas e moletons com atitude.</p>
+                </div>
+            </a>
+
+            <!-- Card 2: ESSENTIALS -->
+            <a href="#" class="card">
+                <img src="https://placehold.co/600x400/ffffff/1a1a1a?text=ESSENTIALS" onerror="this.onerror=null; this.src='https://placehold.co/600x400/ffffff/1a1a1a?text=ESSENTIALS';" alt="Coleção Essentials">
+                <div class="card-body">
+                    <span class="light-text-color">LINHA BASE</span>
+                    <h4>ESSENTIALS VTR</h4>
+                    <p>Peças atemporais e neutras de alta qualidade.</p>
+                </div>
+            </a>
+
+            <!-- Card 3: URBAN CAMO -->
+            <a href="#" class="card">
+                <img src="https://placehold.co/600x400/3c443c/ffffff?text=URBAN+CAMO" onerror="this.onerror=null; this.src='https://placehold.co/600x400/3c443c/ffffff?text=URBAN+CAMO';" alt="Coleção Urban Camo">
+                <div class="card-body">
+                    <span class="light-text-color">DROP 02 | 2025</span>
+                    <h4>URBAN CAMO</h4>
+                    <p>Camuflagem moderna em tons urbanos.</p>
+                </div>
+            </a>
+
+            <!-- Card 4: BLACK ICE (Exemplo de Produto Simples) -->
+            <div class="card">
+                <img src="image/moletonurban.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x400/000000/777777?text=MOLETOM+VTR';" alt="Moletom Black Ice">
+                <div class="card-body">
+                    <span class="light-text-color">DROP BLACK ICE</span>
+                    <h4>Moletom Hoodie Pesado</h4>
+                    <div class="price-info">
+                        <span class="oldprice">R$ 299,90</span>
+                        <span class="price">R$ 199,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+              <img src="image/moletonny.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x400/000000/777777?text=MOLETOM+VTR';" alt="Moletom Black Ice">
+              <div class="card-body">
+                  <span class="light-text-color">DROP BLACK ICE</span>
+                  <h4>Moletom NY Creme</h4>
+                  <div class="price-info">
+                      <span class="oldprice">R$ 299,90</span>
+                      <span class="price">R$ 199,90</span>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+            <img src="image/camisetazulescura.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x400/000000/777777?text=MOLETOM+VTR';" alt="Moletom Black Ice">
+            <div class="card-body">
+                <span class="light-text-color">DROP BLACK ICE</span>
+                <h4>Camiseta Ice Escura I</h4>
+                <div class="price-info">
+                    <span class="oldprice">R$ 199,90</span>
+                    <span class="price">R$ 149,90</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="about">
+                <div class="foot-brand">VTRSTORE</div>
+                <p>Streetwear Clean e Autêntico. Qualidade e atitude em cada peça.</p>
+            </div>
+            
+            <div class="links">
+                <h4>Ajuda & Suporte</h4>
+                <ul>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            
+            <div class="links">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Nossas Lojas</a></li>
+                </ul>
+            </div>
+
+            <div class="newsletter">
+                <h4>Fique Ligado</h4>
+                <p>Receba as novidades e acesso antecipado aos Drops.</p>
+                <form>
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit" class="nav-cta" style="margin-top: 0.5rem; width: 100%;">ASSINAR</button>
+                </form>
+                <div class="socials" style="margin-top: 1.5rem;">
+                    <a href="#">INSTAGRAM</a>
+                    <a href="#">FACEBOOK</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Inicializa ícones do Lucide (usados nos botões do carrossel)
+        lucide.createIcons();
+
+        // Lógica do Carrossel (Idêntica à anterior, pois o CSS e a funcionalidade permanecem)
+        const slideContainer = document.getElementById('carousel-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dotsContainer = document.getElementById('carousel-dots-container');
+        const items = slideContainer.querySelectorAll('.carousel-item');
+        let currentIndex = 0;
+        let slideInterval;
+        const totalItems = items.length;
+
+        /**
+         * Move o carrossel para um índice específico.
+         */
+        function goToSlide(index) {
+            if (index < 0) {
+                index = totalItems - 1;
+            } else if (index >= totalItems) {
+                index = 0;
+            }
+
+            currentIndex = index;
+            const offset = -currentIndex * 100;
+            slideContainer.style.transform = `translateX(${offset}%)`;
+            updateDots();
+        }
+
+        /**
+         * Avança para o próximo slide.
+         */
+        function nextSlide() {
+            goToSlide(currentIndex + 1);
+        }
+
+        /**
+         * Cria e atualiza os pontos de navegação.
+         */
+        function createDots() {
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalItems; i++) {
+                const dot = document.createElement('button');
+                dot.classList.add('carousel-dot');
+                if (i === currentIndex) {
+                    dot.classList.add('active');
+                }
+
+                dot.addEventListener('click', () => {
+                    goToSlide(i);
+                    resetInterval();
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        /**
+         * Atualiza a cor dos pontos para refletir o slide atual.
+         */
+        function updateDots() {
+            dotsContainer.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        /**
+         * Inicia/Reseta o intervalo de slide automático.
+         */
+        function startInterval() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            startInterval();
+        }
+
+        // Adiciona listeners para os botões
+        prevBtn.addEventListener('click', () => {
+            goToSlide(currentIndex - 1);
+            resetInterval();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            goToSlide(currentIndex + 1);
+            resetInterval();
+        });
+
+        // Inicialização
+        window.onload = function () {
+            createDots();
+            startInterval();
+        };
+
+    </script>
+
+</body>
+
+</html>
+

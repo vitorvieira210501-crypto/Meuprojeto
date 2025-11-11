@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VTRSTORE — Calças Streetwear</title>
 
-    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,15 +13,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- CSS -->
-
-<body>
+    <body>
 
     <header>
         <div class="navbar">
             <div href="index.html" class="logo">VTRSTORE</div>
 
-            <!-- Mobile Menu Toggles (Pure CSS) -->
             <input type="checkbox" id="menu-check" class="menu-check">
             <label for="menu-check" class="menu-toggle">
                 <div class="bar"></div>
@@ -35,11 +31,11 @@
                     <li class="dropdown-trigger">
                         <a href="#">VER TODOS</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Coleções</a></li>
+                            <li><a href="colecao.html">Coleções</a></li>
                             <li><a href="camisetas.html">Camisetas</a></li>
                             <li><a href="moletons.html">Moletons</a></li>
                             <li><a href="jaquetas.html">Jaquetas</a></li>
-                            <li><a href="#">Calças</a></li>
+                            <li><a href="calcas.html">Calças</a></li>
                             <li><a href="shorts.html">Shorts</a></li>
                             <li><a href="sobre.html">Sobre</a></li>
                             <li><a href="contato.html">Contato</a></li>
@@ -55,95 +51,124 @@
         </div>
     </header>
 
+
     <main>
 
-        <section class="collection-page" style="padding-top: 2rem;">
-            
-            <div class="section-header" style="max-width: var(--max-width); margin: 0 auto 2rem auto; padding: 0 var(--spacing-default); text-align: center;">
-                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">CALÇAS</h1>
+        <section class="collection-page" style="padding-top: 5rem; padding-bottom: 3rem;">
+
+            <div class="section-header"
+                style="max-width: var(--max-width); margin: 0 auto 2rem auto; padding: 0 var(--spacing-default); text-align: center;">
+                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">TODAS AS CALÇAS</h1>
                 <p style="font-size: 1.1rem; color: var(--light-text-color); max-width: 600px; margin: 0 auto;">
-                    A base de qualquer kit. Cortes precisos, do cargo ao jogger.
+                    A base do seu visual. Cortes modernos, utilitários e o caimento perfeito.
                 </p>
             </div>
-    
+
             <div class="grid" style="max-width: var(--max-width); margin: 0 auto; padding: 0 var(--spacing-default);">
-    
-                <div class="card">
-                    <img src="image/calçajogger.jpg" alt="Calça Streetwear">
+
+                <div class="card quick-view-trigger" data-product-id="31">
+                    <img src="image/calça1.jpg" alt="Calça Urban Utility" class="product-image">
                     <div class="card-body">
-                        <h4>Calça Streetwear</h4>
+                        <h4>Calça Urban Utility Branco</h4>
                         <span class="oldprice">R$299</span><span class="price">R$200</span>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="image/calçasarja.jpg" alt="Calça Streetwear cargo">
+
+                <div class="card quick-view-trigger" data-product-id="32">
+                    <img src="image/calça2.jpg" alt="Calça Cargo Bege" class="product-image">
                     <div class="card-body">
-                        <h4>Calça Streetwear cargo</h4>
-                        <span class="oldprice">R$299</span><span class="price">R$200</span>
+                        <h4>Calça Cargo 'Wide' Bege</h4>
+                        <span class="price">R$329</span>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+CARGO+BLK" alt="Calça Cargo Preta">
+
+                <div class="card quick-view-trigger" data-product-id="33">
+                    <img src="image/calça3.jpg" alt="Calça Jeans" class="product-image">
                     <div class="card-body">
-                        <h4>Calça Cargo 'Utility' Preta</h4>
-                        <span class="price">R$399</span>
+                        <h4>Calça Jeans 'Heritage' Preto</h4>
+                        <span class="price">R$359</span>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+DENIM+WASHED" alt="Calça Jeans Lavada">
+
+                <div class="card quick-view-trigger" data-product-id="34">
+                    <img src="image/calça4.jpg" alt="Calça Jogger" class="product-image">
                     <div class="card-body">
-                        <h4>Calça Jeans 'Street' Washed</h4>
-                        <span class="price">R$379</span>
+                        <h4>Calça Jeans 'Essential'</h4>
+                        <span class="price">R$219</span>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+SWEATPANTS" alt="Calça Moletom">
+
+                <div class="card quick-view-trigger" data-product-id="35">
+                    <img src="image/calça5.jpg" alt="Calça Parachute Branca" class="product-image">
                     <div class="card-body">
-                        <h4>Calça Moletom 'Essential'</h4>
-                        <span class="price">R$279</span>
+                        <h4>Calça Jeans 'Wind'</h4>
+                        <span class="oldprice">R$399</span><span class="price">R$299</span>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+CARGO+RED" alt="Calça Cargo Vermelha">
+
+                <div class="card quick-view-trigger" data-product-id="36">
+                    <img src="image/calça6.jpg" alt="Calça Moletom" class="product-image">
                     <div class="card-body">
-                        <h4>Calça Cargo 'Contrast' Vermelha</h4>
-                        <span class="oldprice">R$429</span><span class="price">R$399</span>
+                        <h4>Calça Jeans 'Heavy' Grafite</h4>
+                        <span class="price">R$249</span>
                     </div>
                 </div>
-                
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+DENIM+BLK" alt="Calça Jeans Preta">
-                    <div class="card-body">
-                        <h4>Calça Jeans 'Street' Black</h4>
-                        <span class="price">R$379</span>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+CARGO+BEIGE" alt="Calça Cargo Bege">
-                    <div class="card-body">
-                        <h4>Calça Cargo 'Utility' Bege</h4>
-                        <span class="price">R$399</span>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+TRACK+PANTS" alt="Calça Track">
-                    <div class="card-body">
-                        <h4>Calça Track 'Contrast'</h4>
-                        <span class="price">R$319</span>
-                    </div>
-                </div>
-    
+
+              
             </div>
         </section>
-    
-    </main>
+
+        <div id="quick-view-modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-modal">&times;</span>
+
+                <div class="quick-view-layout">
+
+                    <div class="qv-image-area">
+                        <img id="qv-image" src="" alt="Imagem do Produto">
+                    </div>
+
+                    <div class="qv-details-area">
+                        <h2 id="qv-name" class="qv-title">Nome do Produto</h2>
+                        <p class="qv-price-text">
+                            <span id="qv-price" class="price" style="font-size: 1.8rem;">R$ 0,00</span>
+                        </p>
+
+                        <p id="qv-description" class="qv-description">Descrição do produto será carregada aqui.</p>
+
+                        <div class="qv-options">
+                            <h4 class="qv-option-title">Tamanho</h4>
+                            <div id="qv-size-options" class="qv-buttons-group">
+                            </div>
+                        </div>
+
+                        <div class="qv-options">
+                            <h4 class="qv-option-title">Cor</h4>
+                            <div id="qv-color-options" class="qv-buttons-group">
+                            </div>
+                        </div>
+
+                        <div class="qv-actions">
+                            <div class="qv-quantity">
+                                <label for="qv-qty">Qtde:</label>
+                                <input type="number" id="qv-qty" value="1" min="1" max="10"
+                                    style="width: 60px; padding: 5px; border: 2px solid var(--primary-color);">
+                            </div>
+
+                            <button id="add-to-cart-btn" class="nav-cta qv-add-to-cart"
+                                style="background-color: var(--accent-color); color: var(--secondary-color); border-color: var(--accent-color);">
+                                <a href="">ADICIONAR AO CARRINHO</a>
+                            </button>
+
+                            <a id="qv-view-full-page" href="#" class="qv-full-details-link">
+                                Ver Página Completa →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
 
     <footer>
         <div class="footer-grid">
@@ -164,4 +189,126 @@
                 <input type="email" placeholder="Seu e-mail" />
             </div>
         </div>
-   
+    </footer>
+
+    <script>
+        // ==========================================
+        // 1. BANCO DE DADOS DE PRODUTOS (SIMULAÇÃO)
+        // IDs: 31 a 37 são Calças
+        // ==========================================
+        const productsDB = [
+            // CALÇAS
+            { id: 31, name: "Calça Urban Utility Black", price: 200.00, description: "Calça utilitária em sarja pesada com corte cônico moderno e detalhes em zíper.", img: "image/calça1.jpg", sizes: ["38", "40", "42", "44"], colors: ["Preto"] },
+            { id: 32, name: "Calça Cargo 'Wide' Bege", price: 329.00, description: "Cargo de fit largo e desestruturado, feito em algodão premium.", img: "image/calça2.jpg", sizes: ["38", "40", "42", "44"], colors: ["Bege", "Verde"] },
+            { id: 33, name: "Calça Jeans 'Heritage' Azul", price: 359.00, description: "Jeans clássico de corte reto, lavagem média e alta durabilidade.", img: "image/calça3.jpg", sizes: ["38", "40", "42", "44", "46"], colors: ["Jeans Azul"] },
+            { id: 34, name: "Calça Jogger 'Essential'", price: 219.00, description: "Jogger leve com punho elástico na barra. Conforto para o dia a dia.", img: "image/calça4.jpg", sizes: ["P", "M", "G", "GG"], colors: ["Preto", "Cinza"] },
+            { id: 35, name: "Calça Parachute 'Wind' Branco", price: 299.00, description: "Calça Parachute em nylon leve, com ajuste no tornozelo e cintura. Estilo techwear.", img: "image/calça5.jpg", sizes: ["M", "G"], colors: ["Branco", "Preto"] },
+            { id: 36, name: "Calça Moletom 'Heavy' Grafite", price: 249.00, description: "Moletom pesado e felpado. Ideal para combinar com nossos hoodies.", img: "image/calça6.jpg", sizes: ["P", "M", "G", "GG"], colors: ["Grafite", "Preto"] },
+           
+        ];
+
+        // ==========================================
+        // 2. ELEMENTOS E FUNÇÕES DE CONTROLE (DO QUICK VIEW)
+        // O código abaixo é genérico e funciona para todas as páginas.
+        // ==========================================
+        const modal = document.getElementById('quick-view-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        const triggers = document.querySelectorAll('.quick-view-trigger');
+
+        function openModal(productId) {
+            const product = productsDB.find(p => p.id === parseInt(productId));
+            if (!product) return;
+
+            document.querySelectorAll('.qv-option-btn').forEach(btn => btn.classList.remove('selected'));
+            document.getElementById('qv-qty').value = 1;
+
+            document.getElementById('qv-image').src = product.img;
+            document.getElementById('qv-name').textContent = product.name;
+            document.getElementById('qv-price').textContent = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
+            document.getElementById('qv-description').textContent = product.description;
+            document.getElementById('add-to-cart-btn').setAttribute('data-product-id', product.id);
+
+            // Tamanho
+            const sizeOptionsEl = document.getElementById('qv-size-options');
+            sizeOptionsEl.innerHTML = '';
+            product.sizes.forEach(size => {
+                const btn = document.createElement('button');
+                btn.textContent = size;
+                btn.classList.add('qv-option-btn');
+                sizeOptionsEl.appendChild(btn);
+            });
+
+            // Cor
+            const colorOptionsEl = document.getElementById('qv-color-options');
+            colorOptionsEl.innerHTML = '';
+            product.colors.forEach(color => {
+                const btn = document.createElement('button');
+                btn.textContent = color;
+                btn.classList.add('qv-option-btn');
+                colorOptionsEl.appendChild(btn);
+            });
+
+            if (sizeOptionsEl.firstChild) sizeOptionsEl.firstChild.classList.add('selected');
+            if (colorOptionsEl.firstChild) colorOptionsEl.firstChild.classList.add('selected');
+
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeQuickView() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // ==========================================
+        // 3. EVENT LISTENERS
+        // ==========================================
+
+        triggers.forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (e.target.tagName !== 'A' && e.target.closest('.quick-view-trigger')) {
+                    const productId = card.getAttribute('data-product-id');
+                    openModal(productId);
+                }
+            });
+        });
+
+        closeModalBtn.addEventListener('click', closeQuickView);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeQuickView();
+            }
+        });
+
+        document.querySelectorAll('.qv-buttons-group').forEach(group => {
+            group.addEventListener('click', (e) => {
+                if (e.target.tagName === 'BUTTON') {
+                    group.querySelectorAll('button').forEach(btn => btn.classList.remove('selected'));
+                    e.target.classList.add('selected');
+                }
+            });
+        });
+
+        document.getElementById('add-to-cart-btn').addEventListener('click', (e) => {
+            const productId = e.target.getAttribute('data-product-id');
+            const selectedSize = document.querySelector('#qv-size-options .selected')?.textContent;
+            const selectedColor = document.querySelector('#qv-color-options .selected')?.textContent;
+            const quantity = document.getElementById('qv-qty').value;
+            const product = productsDB.find(p => p.id === parseInt(productId));
+
+            if (!selectedSize || !selectedColor) {
+                alert("Por favor, selecione o tamanho e a cor.");
+                return;
+            }
+
+            console.log(`Produto ID: ${productId}, Tamanho: ${selectedSize}, Cor: ${selectedColor}, Quantidade: ${quantity} -> Adicionado ao Carrinho!`);
+            alert(`SUCESSO! ${quantity}x ${product.name} (${selectedSize}/${selectedColor}) adicionado.`);
+
+            closeQuickView();
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VTRSTORE — Streetwear Clean</title>
+    <title>VTRSTORE — Jaquetas Streetwear</title>
 
-    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,128 +13,160 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- CSS -->
-
-<body>
+    <body>
 
     <header>
         <div class="navbar">
-            <div class="logo">VTRSTORE</div>
-            <nav>
+            <div href="index.html" class="logo">VTRSTORE</div>
+
+            <input type="checkbox" id="menu-check" class="menu-check">
+            <label for="menu-check" class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <nav id="nav-menu">
                 <ul>
                     <li class="dropdown-trigger">
                         <a href="#">VER TODOS</a>
-
                         <ul class="dropdown-menu">
                             <li><a href="colecao.html">Coleções</a></li>
                             <li><a href="camisetas.html">Camisetas</a></li>
                             <li><a href="moletons.html">Moletons</a></li>
-                            <li><a href="#">Jaquetas</a></li>
+                            <li><a href="jaquetas.html">Jaquetas</a></li>
                             <li><a href="calcas.html">Calças</a></li>
                             <li><a href="shorts.html">Shorts</a></li>
                             <li><a href="sobre.html">Sobre</a></li>
                             <li><a href="contato.html">Contato</a></li>
-
                         </ul>
                     </li>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="colecao.html">Coleções</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                   <li><a class="nav-cta" href="drops.html">Drops</a></li>
+                    <li><a href="colecao.html">Contato</a></li>
+                    <li><a class="nav-cta" href="#">Drops</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
 
-        <section class="collection-page" style="padding-top: 2rem;">
-            
-            <div class="section-header" style="max-width: var(--max-width); margin: 0 auto 2rem auto; padding: 0 var(--spacing-default); text-align: center;">
-                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">JAQUETAS</h1>
+        <section class="collection-page" style="padding-top: 5rem; padding-bottom: 3rem;">
+
+            <div class="section-header"
+                style="max-width: var(--max-width); margin: 0 auto 2rem auto; padding: 0 var(--spacing-default); text-align: center;">
+                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">TODAS AS JAQUETAS</h1>
                 <p style="font-size: 1.1rem; color: var(--light-text-color); max-width: 600px; margin: 0 auto;">
                     Proteção e estilo. Nossas jaquetas são a camada final para o seu visual clean.
                 </p>
             </div>
-    
+
             <div class="grid" style="max-width: var(--max-width); margin: 0 auto; padding: 0 var(--spacing-default);">
-    
-                <div class="card">
-                    <img src="image/jaquetacargo.jpg" alt="Jaqueta Pelea">
+
+                <div class="card quick-view-trigger" data-product-id="16">
+                    <img src="image/jaqueta1.jpg" alt="Jaqueta Pelea" class="product-image">
                     <div class="card-body">
                         <h4>Jaqueta Pelea</h4>
                         <span class="oldprice">R$399</span><span class="price">R$299</span>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+BOMBER+BLK" alt="Jaqueta Bomber Preta">
+
+                <div class="card quick-view-trigger" data-product-id="17">
+                    <img src="image/jaqueta2.jpg" alt="Jaqueta Bomber Preta" class="product-image">
                     <div class="card-body">
                         <h4>Jaqueta Bomber 'Alpha'</h4>
                         <span class="price">R$599</span>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+DENIM+JACKET" alt="Jaqueta Jeans Black">
+
+                <div class="card quick-view-trigger" data-product-id="18">
+                    <img src="image/jaqueta3.jpg" alt="Jaqueta Jeans Black" class="product-image">
                     <div class="card-body">
                         <h4>Jaqueta Jeans 'Street' Black</h4>
                         <span class="price">R$499</span>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+PUFFER+JACKET" alt="Jaqueta Puffer">
+
+                <div class="card quick-view-trigger" data-product-id="19">
+                    <img src="image/jaquetapuffer.jpg" alt="Jaqueta Puffer" class="product-image">
                     <div class="card-body">
                         <h4>Jaqueta Puffer 'Block'</h4>
                         <span class="oldprice">R$799</span><span class="price">R$699</span>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+WINDBREAKER" alt="Corta-Vento">
+
+                <div class="card quick-view-trigger" data-product-id="20">
+                    <img src="image/jaqueta5.jpg" alt="Corta-Vento" class="product-image">
                     <div class="card-body">
                         <h4>Corta-Vento 'Archive'</h4>
                         <span class="price">R$349</span>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+TRACK+JACKET" alt="Jaqueta Track">
+
+                <div class="card quick-view-trigger" data-product-id="21">
+                    <img src="image/jaqueta4.jpg" alt="Jaqueta Track" class="product-image">
                     <div class="card-body">
                         <h4>Jaqueta Track 'Contrast'</h4>
                         <span class="price">R$419</span>
                     </div>
                 </div>
-                
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+BOMBER+RED" alt="Jaqueta Bomber Vermelha">
-                    <div class="card-body">
-                        <h4>Jaqueta Bomber 'Alpha' (Vermelha)</h4>
-                        <span class="price">R$599</span>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+TECH+JACKET" alt="Jaqueta Tech">
-                    <div class="card-body">
-                        <h4>Jaqueta Tech 'Utility'</h4>
-                        <span class="price">R$649</span>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+DENIM+WASHED" alt="Jaqueta Jeans Lavada">
-                    <div class="card-body">
-                        <h4>Jaqueta Jeans 'Street' Washed</h4>
-                        <span class="price">R$499</span>
-                    </div>
-                </div>
-    
+
+
             </div>
         </section>
-    
-    </main>
+
+        <div id="quick-view-modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-modal">&times;</span>
+
+                <div class="quick-view-layout">
+
+                    <div class="qv-image-area">
+                        <img id="qv-image" src="" alt="Imagem do Produto">
+                    </div>
+
+                    <div class="qv-details-area">
+                        <h2 id="qv-name" class="qv-title">Nome do Produto</h2>
+                        <p class="qv-price-text">
+                            <span id="qv-price" class="price" style="font-size: 1.8rem;">R$ 0,00</span>
+                        </p>
+
+                        <p id="qv-description" class="qv-description">Descrição do produto será carregada aqui.</p>
+
+                        <div class="qv-options">
+                            <h4 class="qv-option-title">Tamanho</h4>
+                            <div id="qv-size-options" class="qv-buttons-group">
+                            </div>
+                        </div>
+
+                        <div class="qv-options">
+                            <h4 class="qv-option-title">Cor</h4>
+                            <div id="qv-color-options" class="qv-buttons-group">
+                            </div>
+                        </div>
+
+                        <div class="qv-actions">
+                            <div class="qv-quantity">
+                                <label for="qv-qty">Qtde:</label>
+                                <input type="number" id="qv-qty" value="1" min="1" max="10"
+                                    style="width: 60px; padding: 5px; border: 2px solid var(--primary-color);">
+                            </div>
+
+                            <button id="add-to-cart-btn" class="nav-cta qv-add-to-cart"
+                                style="background-color: var(--accent-color); color: var(--secondary-color); border-color: var(--accent-color);">
+                                <a href="">ADICIONAR AO CARRINHO</a>
+                            </button>
+
+                            <a id="qv-view-full-page" href="#" class="qv-full-details-link">
+                                Ver Página Completa →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
 
 
     <footer>
@@ -158,3 +189,124 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // ==========================================
+        // 1. BANCO DE DADOS DE PRODUTOS (SIMULAÇÃO)
+        // IDs: 16 a 21 são Jaquetas
+        // ==========================================
+        const productsDB = [
+            // JAQUETAS
+            { id: 16, name: "Jaqueta Pelea", price: 299.00, description: "Jaqueta leve de sarja com corte utilitário. Perfeita para meia estação.", img: "image/jaqueta1.jpg", sizes: ["P", "M", "G"], colors: ["Preto", "Verde Militar"] },
+            { id: 17, name: "Jaqueta Bomber 'Alpha'", price: 599.00, description: "Clássica Bomber com forro acolchoado e acabamento premium. Ícone streetwear.", img: "image/jaqueta2.jpg", sizes: ["M", "G", "GG"], colors: ["Preto", "Bordô"] },
+            { id: 18, name: "Jaqueta Jeans 'Street' Black", price: 499.00, description: "Jaqueta Jeans Black com lavagem escura e fit boxy. 100% Algodão.", img: "image/jaqueta3.jpg", sizes: ["P", "M", "G", "GG"], colors: ["Preto"] },
+            { id: 19, name: "Jaqueta Puffer 'Block'", price: 699.00, description: "Puffer super quente com enchimento sintético premium. Ideal para o inverno rigoroso.", img: "image/jaquetapuffer.jpg", sizes: ["M", "G"], colors: ["Amarelo", "Preto"] },
+            { id: 20, name: "Corta-Vento 'Archive'", price: 349.00, description: "Corta-Vento leve e resistente à água. Com capuz ajustável e bolsos com zíper.", img: "image/jaqueta5.jpg", sizes: ["P", "M", "G", "GG"], colors: ["Branco", "Preto", "Azul"] },
+            { id: 21, name: "Jaqueta Track 'Contrast'", price: 419.00, description: "Jaqueta de treino em tecido tecnológico com painéis contrastantes. Visual esportivo e urbano.", img: "image/jaqueta4.jpg", sizes: ["M", "G"], colors: ["Preto/Branco", "Cinza/Preto"] },
+        ];
+
+        // ==========================================
+        // 2. ELEMENTOS E FUNÇÕES DE CONTROLE (DO QUICK VIEW)
+        // O código abaixo é genérico e funciona para todas as páginas.
+        // ==========================================
+        const modal = document.getElementById('quick-view-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        const triggers = document.querySelectorAll('.quick-view-trigger');
+
+        function openModal(productId) {
+            const product = productsDB.find(p => p.id === parseInt(productId));
+            if (!product) return;
+
+            document.querySelectorAll('.qv-option-btn').forEach(btn => btn.classList.remove('selected'));
+            document.getElementById('qv-qty').value = 1;
+
+            document.getElementById('qv-image').src = product.img;
+            document.getElementById('qv-name').textContent = product.name;
+            document.getElementById('qv-price').textContent = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
+            document.getElementById('qv-description').textContent = product.description;
+            document.getElementById('add-to-cart-btn').setAttribute('data-product-id', product.id);
+
+            // Tamanho
+            const sizeOptionsEl = document.getElementById('qv-size-options');
+            sizeOptionsEl.innerHTML = '';
+            product.sizes.forEach(size => {
+                const btn = document.createElement('button');
+                btn.textContent = size;
+                btn.classList.add('qv-option-btn');
+                sizeOptionsEl.appendChild(btn);
+            });
+
+            // Cor
+            const colorOptionsEl = document.getElementById('qv-color-options');
+            colorOptionsEl.innerHTML = '';
+            product.colors.forEach(color => {
+                const btn = document.createElement('button');
+                btn.textContent = color;
+                btn.classList.add('qv-option-btn');
+                colorOptionsEl.appendChild(btn);
+            });
+
+            if (sizeOptionsEl.firstChild) sizeOptionsEl.firstChild.classList.add('selected');
+            if (colorOptionsEl.firstChild) colorOptionsEl.firstChild.classList.add('selected');
+
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeQuickView() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // ==========================================
+        // 3. EVENT LISTENERS
+        // ==========================================
+
+        triggers.forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (e.target.tagName !== 'A' && e.target.closest('.quick-view-trigger')) {
+                    const productId = card.getAttribute('data-product-id');
+                    openModal(productId);
+                }
+            });
+        });
+
+        closeModalBtn.addEventListener('click', closeQuickView);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeQuickView();
+            }
+        });
+
+        document.querySelectorAll('.qv-buttons-group').forEach(group => {
+            group.addEventListener('click', (e) => {
+                if (e.target.tagName === 'BUTTON') {
+                    group.querySelectorAll('button').forEach(btn => btn.classList.remove('selected'));
+                    e.target.classList.add('selected');
+                }
+            });
+        });
+
+        document.getElementById('add-to-cart-btn').addEventListener('click', (e) => {
+            const productId = e.target.getAttribute('data-product-id');
+            const selectedSize = document.querySelector('#qv-size-options .selected')?.textContent;
+            const selectedColor = document.querySelector('#qv-color-options .selected')?.textContent;
+            const quantity = document.getElementById('qv-qty').value;
+            const product = productsDB.find(p => p.id === parseInt(productId));
+
+            if (!selectedSize || !selectedColor) {
+                alert("Por favor, selecione o tamanho e a cor.");
+                return;
+            }
+
+            console.log(`Produto ID: ${productId}, Tamanho: ${selectedSize}, Cor: ${selectedColor}, Quantidade: ${quantity} -> Adicionado ao Carrinho!`);
+            alert(`SUCESSO! ${quantity}x ${product.name} (${selectedSize}/${selectedColor}) adicionado.`);
+
+            closeQuickView();
+        });
+
+    </script>
+
+</body>
+
+</html>

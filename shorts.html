@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VTRSTORE — Streetwear Clean</title>
+    <title>VTRSTORE — Shorts Streetwear</title>
 
-    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,35 +13,39 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- CSS -->
-
-<body>
+    <body>
 
     <header>
         <div class="navbar">
-            <div class="logo">VTRSTORE</div>
-            <nav>
+            <div href="index.html" class="logo">VTRSTORE</div>
+
+            <input type="checkbox" id="menu-check" class="menu-check">
+            <label for="menu-check" class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <nav id="nav-menu">
                 <ul>
                     <li class="dropdown-trigger">
                         <a href="#">VER TODOS</a>
-
                         <ul class="dropdown-menu">
                             <li><a href="colecao.html">Coleções</a></li>
                             <li><a href="camisetas.html">Camisetas</a></li>
                             <li><a href="moletons.html">Moletons</a></li>
                             <li><a href="jaquetas.html">Jaquetas</a></li>
                             <li><a href="calcas.html">Calças</a></li>
-                            <li><a href="#">Shorts</a></li>
+                            <li><a href="shorts.html">Shorts</a></li>
                             <li><a href="sobre.html">Sobre</a></li>
                             <li><a href="contato.html">Contato</a></li>
-
                         </ul>
                     </li>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="colecao.html">Coleções</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a class="nav-cta" href="drops.html">Drops</a></li>
+                    <li><a href="colecao.html">Contato</a></li>
+                    <li><a class="nav-cta" href="#">Drops</a></li>
                 </ul>
             </nav>
         </div>
@@ -51,11 +54,11 @@
 
     <main>
 
-        <section class="collection-page" style="padding-top: 2rem;">
+        <section class="collection-page" style="padding-top: 5rem; padding-bottom: 3rem;">
 
             <div class="section-header"
                 style="max-width: var(--max-width); margin: 0 auto 2rem auto; padding: 0 var(--spacing-default); text-align: center;">
-                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">SHORTS</h1>
+                <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">TODOS OS SHORTS</h1>
                 <p style="font-size: 1.1rem; color: var(--light-text-color); max-width: 600px; margin: 0 auto;">
                     Funcionalidade e estilo para o asfalto. Nossos shorts com o corte clean.
                 </p>
@@ -63,83 +66,118 @@
 
             <div class="grid" style="max-width: var(--max-width); margin: 0 auto; padding: 0 var(--spacing-default);">
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+CARGO+SHORT+BLK" alt="Short Cargo Preto">
+                <div class="card quick-view-trigger" data-product-id="22">
+                    <img src="image/short1.jpg" alt="Short Cargo Preto" class="product-image">
                     <div class="card-body">
                         <h4>Short Cargo 'Utility' Preto</h4>
                         <span class="price">R$249</span>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+SWEAT+SHORT" alt="Short Moletom">
+                <div class="card quick-view-trigger" data-product-id="23">
+                    <img src="image/short2.jpg" alt="Short Moletom" class="product-image">
                     <div class="card-body">
-                        <h4>Short Moletom 'Essential'</h4>
+                        <h4>Short 'Essential'</h4>
                         <span class="price">R$199</span>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+CARGO+SHORT+BEIGE" alt="Short Cargo Bege">
+                <div class="card quick-view-trigger" data-product-id="24">
+                    <img src="image/short3.jpg" alt="Short Cargo Bege" class="product-image">
                     <div class="card-body">
                         <h4>Short Cargo 'Utility' Bege</h4>
                         <span class="price">R$249</span>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+DENIM+SHORT" alt="Short Jeans">
+                <div class="card quick-view-trigger" data-product-id="25">
+                    <img src="image/short3.jpg" alt="Short Jeans" class="product-image">
                     <div class="card-body">
-                        <h4>Short Jeans 'Street' Washed</h4>
+                        <h4>Short 'Street' Washed</h4>
                         <span class="oldprice">R$299</span><span class="price">R$279</span>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+SWEAT+SHORT+GREY" alt="Short Moletom Cinza">
+                <div class="card quick-view-trigger" data-product-id="26">
+                    <img src="image/short4.jpg" alt="Short Moletom Cinza" class="product-image">
                     <div class="card-body">
                         <h4>Short Moletom 'Essential' Cinza</h4>
                         <span class="price">R$199</span>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500/FF0000/FFFFFF?text=VTR+SHORT+RED"
-                        alt="Short Vermelho">
+                <div class="card quick-view-trigger" data-product-id="27">
+                    <img src="image/short5.jpg"
+                        alt="Short Vermelho" class="product-image">
                     <div class="card-body">
-                        <h4>Short 'Contrast' Vermelho</h4>
+                        <h4>Short 'Contrast'</h4>
                         <span class="price">R$229</span>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+NYLON+SHORT" alt="Short Nylon">
+                <div class="card quick-view-trigger" data-product-id="28">
+                    <img src="image/short6.jpg" alt="Short Nylon" class="product-image">
                     <div class="card-body">
                         <h4>Short Nylon 'Archive'</h4>
                         <span class="price">R$189</span>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x500?text=VTR+CARGO+SHORT+WHT" alt="Short Cargo Branco">
-                    <div class="card-body">
-                        <h4>Short Cargo 'Utility' Branco</h4>
-                        <span class="price">R$249</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="httpsS://via.placeholder.com/400x500?text=VTR+DENIM+SHORT+BLK" alt="Short Jeans Preto">
-                    <div class="card-body">
-                        <h4>Short Jeans 'Street' Black</h4>
-                        <span class="price">R$279</span>
-                    </div>
-                </div>
-
+             
             </div>
         </section>
 
-    </main>
+        <div id="quick-view-modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-modal">&times;</span>
+
+                <div class="quick-view-layout">
+
+                    <div class="qv-image-area">
+                        <img id="qv-image" src="" alt="Imagem do Produto">
+                    </div>
+
+                    <div class="qv-details-area">
+                        <h2 id="qv-name" class="qv-title">Nome do Produto</h2>
+                        <p class="qv-price-text">
+                            <span id="qv-price" class="price" style="font-size: 1.8rem;">R$ 0,00</span>
+                        </p>
+
+                        <p id="qv-description" class="qv-description">Descrição do produto será carregada aqui.</p>
+
+                        <div class="qv-options">
+                            <h4 class="qv-option-title">Tamanho</h4>
+                            <div id="qv-size-options" class="qv-buttons-group">
+                            </div>
+                        </div>
+
+                        <div class="qv-options">
+                            <h4 class="qv-option-title">Cor</h4>
+                            <div id="qv-color-options" class="qv-buttons-group">
+                            </div>
+                        </div>
+
+                        <div class="qv-actions">
+                            <div class="qv-quantity">
+                                <label for="qv-qty">Qtde:</label>
+                                <input type="number" id="qv-qty" value="1" min="1" max="10"
+                                    style="width: 60px; padding: 5px; border: 2px solid var(--primary-color);">
+                            </div>
+
+                            <button id="add-to-cart-btn" class="nav-cta qv-add-to-cart"
+                                style="background-color: var(--accent-color); color: var(--secondary-color); border-color: var(--accent-color);">
+                                <a href="carrinho.html">ADICIONAR AO CARRINHO</a>
+                            </button>
+
+                            <a id="qv-view-full-page" href="#" class="qv-full-details-link">
+                                Ver Página Completa →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
 
     <footer>
         <div class="footer-grid">
@@ -161,7 +199,127 @@
             </div>
         </div>
     </footer>
-   
+
+    <script>
+        // ==========================================
+        // 1. BANCO DE DADOS DE PRODUTOS (SIMULAÇÃO)
+        // IDs: 22 a 30 são Shorts
+        // ==========================================
+        const productsDB = [
+            // SHORTS
+            { id: 22, name: "Short Cargo 'Utility' Preto", price: 249.00, description: "Short cargo funcional em sarja leve com múltiplos bolsos. Ajuste moderno.", img: "image/short1.jpg", sizes: ["38", "40", "42", "44"], colors: ["Preto"] },
+            { id: 23, name: "Short Moletom 'Essential'", price: 199.00, description: "Short de moletom super confortável e minimalista. Perfeito para o verão.", img: "image/short2.jpg", sizes: ["P", "M", "G", "GG"], colors: ["Preto", "Branco"] },
+            { id: 24, name: "Short Cargo 'Utility' Bege", price: 249.00, description: "Versão bege do nosso cargo, ideal para looks de contraste.", img: "https://via.placeholder.com/400x500?text=VTR+CARGO+SHORT+BEIGE", sizes: ["38", "40", "42", "44"], colors: ["Bege"] },
+            { id: 25, name: "Short Jeans 'Street' Washed", price: 279.00, description: "Short jeans com lavagem clara, corte reto e despojado.", img: "https://via.placeholder.com/400x500?text=VTR+DENIM+SHORT", sizes: ["38", "40", "42", "44"], colors: ["Jeans Claro"] },
+            { id: 26, name: "Short Moletom 'Essential' Cinza", price: 199.00, description: "Moletom cinza mescla para máximo conforto e estilo clean.", img: "https://via.placeholder.com/400x500?text=VTR+SWEAT+SHORT+GREY", sizes: ["P", "M", "G"], colors: ["Cinza Mescla"] },
+            { id: 27, name: "Short 'Contrast' Vermelho", price: 229.00, description: "Short leve com detalhes em cores contrastantes. Peça statement.", img: "https://via.placeholder.com/400x500/FF0000/FFFFFF?text=VTR+SHORT+RED", sizes: ["M", "G"], colors: ["Vermelho", "Preto"] },
+            { id: 28, name: "Short Nylon 'Archive'", price: 189.00, description: "Short em Nylon leve e de secagem rápida. Estilo retrô utilitário.", img: "https://via.placeholder.com/400x500?text=VTR+NYLON+SHORT", sizes: ["P", "M", "G", "GG"], colors: ["Preto", "Verde"] },
+            { id: 29, name: "Short Cargo 'Utility' Branco", price: 249.00, description: "Cargo Branco com bolsos laterais. Perfeito para looks monocromáticos de verão.", img: "https://via.placeholder.com/400x500?text=VTR+CARGO+SHORT+WHT", sizes: ["40", "42", "44"], colors: ["Branco"] },
+            { id: 30, name: "Short Jeans 'Street' Black", price: 279.00, description: "Jeans preto de alta durabilidade com corte solto.", img: "https://via.placeholder.com/400x500?text=VTR+DENIM+SHORT+BLK", sizes: ["38", "40", "42"], colors: ["Preto"] },
+        ];
+
+        // ==========================================
+        // 2. ELEMENTOS E FUNÇÕES DE CONTROLE (DO QUICK VIEW)
+        // O código abaixo é genérico e funciona para todas as páginas.
+        // ==========================================
+        const modal = document.getElementById('quick-view-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        const triggers = document.querySelectorAll('.quick-view-trigger');
+
+        function openModal(productId) {
+            const product = productsDB.find(p => p.id === parseInt(productId));
+            if (!product) return;
+
+            document.querySelectorAll('.qv-option-btn').forEach(btn => btn.classList.remove('selected'));
+            document.getElementById('qv-qty').value = 1;
+
+            document.getElementById('qv-image').src = product.img;
+            document.getElementById('qv-name').textContent = product.name;
+            document.getElementById('qv-price').textContent = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
+            document.getElementById('qv-description').textContent = product.description;
+            document.getElementById('add-to-cart-btn').setAttribute('data-product-id', product.id);
+
+            // Tamanho
+            const sizeOptionsEl = document.getElementById('qv-size-options');
+            sizeOptionsEl.innerHTML = '';
+            product.sizes.forEach(size => {
+                const btn = document.createElement('button');
+                btn.textContent = size;
+                btn.classList.add('qv-option-btn');
+                sizeOptionsEl.appendChild(btn);
+            });
+
+            // Cor
+            const colorOptionsEl = document.getElementById('qv-color-options');
+            colorOptionsEl.innerHTML = '';
+            product.colors.forEach(color => {
+                const btn = document.createElement('button');
+                btn.textContent = color;
+                btn.classList.add('qv-option-btn');
+                colorOptionsEl.appendChild(btn);
+            });
+
+            if (sizeOptionsEl.firstChild) sizeOptionsEl.firstChild.classList.add('selected');
+            if (colorOptionsEl.firstChild) colorOptionsEl.firstChild.classList.add('selected');
+
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeQuickView() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // ==========================================
+        // 3. EVENT LISTENERS
+        // ==========================================
+
+        triggers.forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (e.target.tagName !== 'A' && e.target.closest('.quick-view-trigger')) {
+                    const productId = card.getAttribute('data-product-id');
+                    openModal(productId);
+                }
+            });
+        });
+
+        closeModalBtn.addEventListener('click', closeQuickView);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeQuickView();
+            }
+        });
+
+        document.querySelectorAll('.qv-buttons-group').forEach(group => {
+            group.addEventListener('click', (e) => {
+                if (e.target.tagName === 'BUTTON') {
+                    group.querySelectorAll('button').forEach(btn => btn.classList.remove('selected'));
+                    e.target.classList.add('selected');
+                }
+            });
+        });
+
+        document.getElementById('add-to-cart-btn').addEventListener('click', (e) => {
+            const productId = e.target.getAttribute('data-product-id');
+            const selectedSize = document.querySelector('#qv-size-options .selected')?.textContent;
+            const selectedColor = document.querySelector('#qv-color-options .selected')?.textContent;
+            const quantity = document.getElementById('qv-qty').value;
+            const product = productsDB.find(p => p.id === parseInt(productId));
+
+            if (!selectedSize || !selectedColor) {
+                alert("Por favor, selecione o tamanho e a cor.");
+                return;
+            }
+
+            console.log(`Produto ID: ${productId}, Tamanho: ${selectedSize}, Cor: ${selectedColor}, Quantidade: ${quantity} -> Adicionado ao Carrinho!`);
+            alert(`SUCESSO! ${quantity}x ${product.name} (${selectedSize}/${selectedColor}) adicionado.`);
+
+            closeQuickView();
+        });
+
+    </script>
+
 </body>
 
 </html>

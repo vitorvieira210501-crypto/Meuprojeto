@@ -20,29 +20,36 @@
 
     <header>
         <div class="navbar">
-            <div class="logo">VTRSTORE</div>
-            <nav>
+            <div href="index.html" class="logo">VTRSTORE</div>
+
+            <!-- Mobile Menu Toggles (Pure CSS) -->
+            <input type="checkbox" id="menu-check" class="menu-check">
+            <label for="menu-check" class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <nav id="nav-menu">
                 <ul>
                     <li class="dropdown-trigger">
                         <a href="#">VER TODOS</a>
-
                         <ul class="dropdown-menu">
                             <li><a href="colecao.html">Coleções</a></li>
-                            <li><a href="calcas.html">Camisetas</a></li>
+                            <li><a href="camisetas.html">Camisetas</a></li>
                             <li><a href="moletons.html">Moletons</a></li>
                             <li><a href="jaquetas.html">Jaquetas</a></li>
                             <li><a href="calcas.html">Calças</a></li>
                             <li><a href="shorts.html">Shorts</a></li>
                             <li><a href="sobre.html">Sobre</a></li>
                             <li><a href="contato.html">Contato</a></li>
-
                         </ul>
                     </li>
-                    
+                    <li><a href="#">Inicio</a></li>
                     <li><a href="colecao.html">Coleções</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                   <li><a class="nav-cta" href="drops.html">Drops</a></li>
+                    <li><a href="colecao.html">Contato</a></li>
+                    <li><a class="nav-cta" href="drops.html">Drops</a></li>
                 </ul>
             </nav>
         </div>
@@ -92,29 +99,29 @@
             <p style="color: var(--light-text-color);">Explore as coleções ativas.</p>
         </section>
     
-        <section id="drop-black-ice">
+        <section id="drop-black-ice" style="max-width: var(--max-width); margin: 0 auto; padding: 0 var(--spacing-default);">
             <div class="section-header">
                 <h2>DROP: BLACK ICE</h2>
                 <a href="#" style="font-weight: 700; font-size: 0.9rem; text-transform: uppercase;">Ver Drop Completo →</a>
             </div>
     
             <div class="grid">
-                <div class="card">
-                    <img src="image/dropblackice1.jpg" alt="Camiseta Black Ice I">
+                <div class="card quick-view-trigger" data-product-id="1">
+                    <img src="image/dropblackice1.jpg" alt="Camiseta Black Ice I" class="product-image">
                     <div class="card-body">
                         <h4>Camiseta Black Ice I</h4>
                         <span class="oldprice">R$199</span><span class="price">R$149</span>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="image/dropblackice2.jpg" alt="Camiseta Black Ice II">
+                <div class="card quick-view-trigger" data-product-id="2">
+                    <img src="image/dropblackice2.jpg" alt="Camiseta Black Ice II" class="product-image">
                     <div class="card-body">
                         <h4>Camiseta Black Ice II</h4>
                         <span class="oldprice">R$329</span><span class="price">R$259</span>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="image/dropblackice3.jpg" alt="Camiseta Black Ice III">
+                <div class="card quick-view-trigger" data-product-id="3">
+                    <img src="image/dropblackice3.jpg" alt="Camiseta Black Ice III" class="product-image">
                     <div class="card-body">
                         <h4>Camiseta Black Ice III</h4>
                         <span class="oldprice">R$399</span><span class="price">R$299</span>
@@ -123,28 +130,29 @@
             </div>
         </section>
     
-        <section id="drop-urban-utility" style="background-color: #f9f9f9;"> <div class="section-header">
+        <section id="drop-urban-utility" style="background-color: #f9f9f9; padding: var(--spacing-default) 0;"> 
+            <div class="section-header">
                 <h2>DROP: URBAN UTILITY</h2>
                 <a href="#" style="font-weight: 700; font-size: 0.9rem; text-transform: uppercase;">Ver Drop Completo →</a>
             </div>
     
-            <div class="grid">
-                 <div class="card">
-                    <img src="image/camisetaurban1.jpg" alt="Jaqueta Pelea">
+            <div class="grid" style="max-width: var(--max-width); margin: 0 auto; padding: 0 var(--spacing-default);">
+                <div class="card quick-view-trigger" data-product-id="4">
+                    <img src="image/camisetaurban1.jpg" alt="Camiseta Urban Utility White" class="product-image">
                     <div class="card-body">
                         <h4>Camiseta Urban Utility White</h4>
                         <span class="oldprice">R$399</span><span class="price">R$299</span>
                     </div>
                 </div>
-                 <div class="card">
-                    <img src="image/calçaurban2.jpg" alt="Calça Streetwear">
+                <div class="card quick-view-trigger" data-product-id="5">
+                    <img src="image/calçaurban2.jpg" alt="Calça Urban Utility" class="product-image">
                     <div class="card-body">
                         <h4>Calça Urban Utility</h4>
                         <span class="oldprice">R$299</span><span class="price">R$200</span>
                     </div>
                 </div>
-                 <div class="card">
-                    <img src="image/moletonurban2.jpg" alt="Calça Streetwear cargo">
+                <div class="card quick-view-trigger" data-product-id="6">
+                    <img src="image/moletonurban2.jpg" alt="Moletom Urban Utility I" class="product-image">
                     <div class="card-body">
                         <h4>Moleton Urban Utility I</h4>
                         <span class="oldprice">R$299</span><span class="price">R$200</span>
@@ -153,29 +161,29 @@
             </div>
         </section>
     
-        <section id="drop-essentials">
+        <section id="drop-essentials" style="max-width: var(--max-width); margin: 0 auto; padding: 0 var(--spacing-default);">
             <div class="section-header">
                 <h2>VTR ESSENTIALS</h2>
                 <a href="#" style="font-weight: 700; font-size: 0.9rem; text-transform: uppercase;">Ver Drop Completo →</a>
             </div>
     
             <div class="grid">
-                <div class="card">
-                    <img src="image/camiseta.jpg" alt="Camiseta Creme NCIT">
+                <div class="card quick-view-trigger" data-product-id="7">
+                    <img src="image/camiseta.jpg" alt="Camiseta Creme NCIT" class="product-image">
                     <div class="card-body">
                         <h4>Camiseta Creme NCIT</h4>
                         <span class="oldprice">R$399</span><span class="price">R$299</span>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="image/bone.jpg" alt="Boné Black Leon II">
+                <div class="card quick-view-trigger" data-product-id="8">
+                    <img src="image/bone.jpg" alt="Boné Black Leon II" class="product-image">
                     <div class="card-body">
                         <h4>Boné Black Leon II</h4>
                         <span class="oldprice">R$199</span><span class="price">R$100</span>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="image/tenis urban.jpg" alt="Tênis Streetwear">
+                <div class="card quick-view-trigger" data-product-id="9">
+                    <img src="image/tenis urban.jpg" alt="Tênis Streetwear" class="product-image">
                     <div class="card-body">
                         <h4>Tênis Urban Confort</h4>
                         <span class="oldprice">R$199</span><span class="price">R$169</span>
@@ -185,6 +193,55 @@
         </section>
     
     </main>
+    
+    <div id="quick-view-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            
+            <div class="quick-view-layout">
+                
+                <div class="qv-image-area">
+                    <img id="qv-image" src="" alt="Imagem do Produto">
+                </div>
+                
+                <div class="qv-details-area">
+                    <h2 id="qv-name" class="qv-title">Nome do Produto</h2>
+                    <p class="qv-price-text">
+                        <span id="qv-price" class="price" style="font-size: 1.8rem;">R$ 0,00</span>
+                    </p>
+    
+                    <p id="qv-description" class="qv-description">Descrição do produto será carregada aqui.</p>
+    
+                    <div class="qv-options">
+                        <h4 class="qv-option-title">Tamanho</h4>
+                        <div id="qv-size-options" class="qv-buttons-group">
+                            </div>
+                    </div>
+    
+                    <div class="qv-options">
+                        <h4 class="qv-option-title">Cor</h4>
+                        <div id="qv-color-options" class="qv-buttons-group">
+                            </div>
+                    </div>
+    
+                    <div class="qv-actions">
+                        <div class="qv-quantity">
+                            <label for="qv-qty">Qtde:</label>
+                            <input type="number" id="qv-qty" value="1" min="1" max="10" style="width: 60px; padding: 5px; border: 2px solid var(--primary-color);">
+                        </div>
+                        
+                        <button id="add-to-cart-btn" class="nav-cta qv-add-to-cart" style="background-color: var(--accent-color); color: var(--secondary-color); border-color: var(--accent-color);">
+                            <a href="carrinho.html">ADICIONAR AO CARRINHO</a>
+                        </button>
+                        
+                        <a id="qv-view-full-page" href="#" class="qv-full-details-link">
+                            Ver Página Completa →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Rodapé -->
     <footer>
@@ -295,6 +352,143 @@
         startAutoSlide();
         goToSlide(currentIndex); // Garante que o primeiro slide esteja visível ao carregar
 
+     </script>
+     <script>
+        // ==========================================
+        // 1. BANCO DE DADOS DE PRODUTOS (SIMULAÇÃO)
+        // ATENÇÃO: Use os IDs (1 a 9) que você usou nos seus cards!
+        // ==========================================
+        const productsDB = [
+            // DROP BLACK ICE
+            { id: 1, name: "Camiseta Black Ice I", price: 149.00, description: "Algodão penteado, gola canelada e corte boxy. Perfeita para o contraste.", img: "image/dropblackice1.jpg", sizes: ["P", "M", "G", "GG"], colors: ["Preto", "Branco"] },
+            { id: 2, name: "Camiseta Black Ice II", price: 259.00, description: "Gráfico frontal exclusivo. Construção pesada, sem costura lateral.", img: "image/dropblackice2.jpg", sizes: ["M", "G", "GG"], colors: ["Preto", "Vermelho"] },
+            { id: 3, name: "Camiseta Black Ice III", price: 299.00, description: "Design agressivo no ombro. Perfeita para quem busca destaque no detalhe.", img: "image/dropblackice3.jpg", sizes: ["M", "G"], colors: ["Preto"] },
+            
+            // DROP URBAN UTILITY
+            { id: 4, name: "Camiseta Urban Utility White", price: 299.00, description: "Peça utilitária com costuras reforçadas e fit oversized. Tecido de alta gramatura.", img: "image/camisetaurban1.jpg", sizes: ["P", "M", "G"], colors: ["Branco", "Preto"] },
+            { id: 5, name: "Calça Urban Utility", price: 200.00, description: "Calça em sarja pesada com bolsos laterais funcionais. Ajuste cônico moderno.", img: "image/calçaurban2.jpg", sizes: ["38", "40", "42"], colors: ["Bege", "Preto"] },
+            { id: 6, name: "Moletom Urban Utility I", price: 200.00, description: "Moletom Gola Careca. Conforto e corte reto. Ideal para o outono.", img: "image/moletonurban2.jpg", sizes: ["M", "G", "GG"], colors: ["Cinza", "Preto"] },
+            
+            // VTR ESSENTIALS
+            { id: 7, name: "Camiseta Creme NCIT", price: 299.00, description: "Camiseta Oversized na cor creme. Gráfico sutil no verso.", img: "image/camiseta.jpg", sizes: ["P", "M", "G"], colors: ["Creme", "Preto"] },
+            { id: 8, name: "Boné Black Leon II", price: 100.00, description: "Boné de aba curva com ajuste de fivela em metal preto.", img: "image/bone.jpg", sizes: ["Único"], colors: ["Preto", "Branco"] },
+            { id: 9, name: "Tênis Urban Confort", price: 169.00, description: "Tênis de cano baixo. Conforto e durabilidade para o uso diário.", img: "image/tenis urban.jpg", sizes: ["39", "40", "41", "42"], colors: ["Preto", "Branco"] },
+        ];
+    
+        // ==========================================
+        // 2. ELEMENTOS E FUNÇÕES DE CONTROLE
+        // ==========================================
+        const modal = document.getElementById('quick-view-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        // Seleciona todos os cards que devem abrir o modal
+        const triggers = document.querySelectorAll('.quick-view-trigger'); 
+        
+        // Função para abrir e preencher o modal
+        function openModal(productId) {
+            const product = productsDB.find(p => p.id === parseInt(productId));
+            if (!product) return;
+    
+            // Resetar e limpar seleções
+            document.querySelectorAll('.qv-option-btn').forEach(btn => btn.classList.remove('selected'));
+            document.getElementById('qv-qty').value = 1; // Reseta quantidade
+    
+            // Carregar as informações
+            document.getElementById('qv-image').src = product.img;
+            document.getElementById('qv-name').textContent = product.name;
+            document.getElementById('qv-price').textContent = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
+            document.getElementById('qv-description').textContent = product.description;
+            document.getElementById('add-to-cart-btn').setAttribute('data-product-id', product.id);
+            
+            // --- Geração de Opções ---
+            
+            // Tamanho
+            const sizeOptionsEl = document.getElementById('qv-size-options');
+            sizeOptionsEl.innerHTML = '';
+            product.sizes.forEach(size => {
+                const btn = document.createElement('button');
+                btn.textContent = size;
+                btn.classList.add('qv-option-btn');
+                sizeOptionsEl.appendChild(btn);
+            });
+    
+            // Cor
+            const colorOptionsEl = document.getElementById('qv-color-options');
+            colorOptionsEl.innerHTML = '';
+            product.colors.forEach(color => {
+                const btn = document.createElement('button');
+                btn.textContent = color;
+                btn.classList.add('qv-option-btn');
+                colorOptionsEl.appendChild(btn);
+            });
+            
+            // Selecionar o primeiro item de cada grupo por padrão
+            if(sizeOptionsEl.firstChild) sizeOptionsEl.firstChild.classList.add('selected');
+            if(colorOptionsEl.firstChild) colorOptionsEl.firstChild.classList.add('selected');
+    
+            // Mostrar o Modal
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+        }
+    
+        // Função para fechar o modal
+        function closeQuickView() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; 
+        }
+    
+        // ==========================================
+        // 3. EVENT LISTENERS
+        // ==========================================
+    
+        // Abrir Modal ao clicar no card
+        triggers.forEach(card => {
+            card.addEventListener('click', (e) => {
+                // Garante que o clique seja tratado apenas se não for no link de ver tudo, etc.
+                if (e.target.tagName !== 'A' && e.target.closest('.quick-view-trigger')) {
+                    const productId = card.getAttribute('data-product-id');
+                    openModal(productId);
+                }
+            });
+        });
+    
+        // Fechar Modal
+        closeModalBtn.addEventListener('click', closeQuickView);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeQuickView();
+            }
+        });
+    
+        // Gerenciar Seleção de Opções (Tamanho/Cor)
+        document.querySelectorAll('.qv-buttons-group').forEach(group => {
+            group.addEventListener('click', (e) => {
+                if (e.target.tagName === 'BUTTON') {
+                    group.querySelectorAll('button').forEach(btn => btn.classList.remove('selected'));
+                    e.target.classList.add('selected');
+                }
+            });
+        });
+    
+        // Lógica Adicionar ao Carrinho (Simulação)
+        document.getElementById('add-to-cart-btn').addEventListener('click', (e) => {
+            const productId = e.target.getAttribute('data-product-id');
+            const selectedSize = document.querySelector('#qv-size-options .selected')?.textContent;
+            const selectedColor = document.querySelector('#qv-color-options .selected')?.textContent;
+            const quantity = document.getElementById('qv-qty').value;
+            const product = productsDB.find(p => p.id === parseInt(productId));
+            
+            if (!selectedSize || !selectedColor) {
+                 alert("Por favor, selecione o tamanho e a cor.");
+                 return;
+            }
+    
+            console.log(`Produto ID: ${productId}, Tamanho: ${selectedSize}, Cor: ${selectedColor}, Quantidade: ${quantity} -> Adicionado ao Carrinho!`);
+            alert(`SUCESSO! ${quantity}x ${product.name} (${selectedSize}/${selectedColor}) adicionado.`);
+            
+            // Você chamaria aqui a função de adicionar ao carrinho e fecharia o modal
+            closeQuickView();
+        });
+    
     </script>
     
 

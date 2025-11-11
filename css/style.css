@@ -796,3 +796,217 @@ footer p {
       position: static;
   }
 }
+
+/* ========================================= */
+/* --- CSS PARA O MODAL DE VISUALIZAÇÃO RÁPIDA (QUICK VIEW) --- */
+/* ========================================= */
+
+/* 1. Base do Modal (Fundo Escuro) */
+#quick-view-modal {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 2000; /* Acima de tudo (header sticky, etc.) */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* Permite scroll se o conteúdo for grande */
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo preto semi-transparente */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 2. Container do Conteúdo */
+.modal-content {
+  background-color: var(--secondary-color); /* Branco */
+  padding: 0;
+  border: 4px solid var(--primary-color); /* Borda grossa Streetwear */
+  box-shadow: 10px 10px 0 var(--accent-color); /* Sombra 3D Sólida Vermelha */
+  max-width: 1000px; /* Largura ideal em desktop */
+  width: 95%;
+  position: relative;
+  animation: fadeIn 0.3s;
+}
+
+/* 3. Layout de 2 Colunas (Imagem e Detalhes) */
+.quick-view-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 50/50 em desktop */
+}
+
+.qv-image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.qv-details-area {
+  padding: 2.5rem;
+}
+
+/* 4. Títulos e Texto */
+.qv-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.qv-description {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+.qv-price-text {
+  margin-bottom: 1.5rem;
+}
+
+/* 5. Opções (Tamanho/Cor) */
+.qv-options {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+.qv-option-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.qv-buttons-group button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color); /* Borda Preta */
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 8px; /* Para melhor visualização em mobile */
+  border-radius: 0; /* Quadrado */
+  transition: all 0.2s ease;
+}
+
+.qv-buttons-group button.selected {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-color: var(--accent-color); /* Borda Vermelha no Selecionado */
+  box-shadow: 2px 2px 0 var(--accent-color); /* Sombra leve no selecionado */
+}
+.qv-buttons-group button:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+
+/* 6. Ações (Quantidade e Botão CTA) */
+.qv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.qv-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.qv-quantity label {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+.qv-quantity input {
+  border: 2px solid var(--primary-color);
+  padding: 0.5rem;
+  font-family: var(--font-body);
+  text-align: center;
+  width: 60px;
+}
+
+.qv-add-to-cart {
+  /* Reutiliza nav-cta, mas com estilo CTA de destaque */
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--secondary-color);
+  flex-grow: 1; /* Permite que ele se expanda um pouco */
+}
+
+.qv-add-to-cart:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  border-color: var(--primary-color);
+}
+
+.qv-full-details-link {
+  font-size: 0.9rem;
+  color: var(--light-text-color);
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+
+/* 7. Botão de Fechar */
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 2001;
+  transition: color 0.2s;
+}
+
+#close-modal:hover {
+  color: var(--accent-color);
+}
+
+/* 8. Responsividade (Empilha colunas em telas menores) */
+@media (max-width: 800px) {
+  #quick-view-modal {
+      padding: 0;
+      align-items: flex-start; /* Alinha o modal ao topo em mobile */
+  }
+  .modal-content {
+      max-width: 100%;
+      width: 100%;
+      min-height: 100vh; /* Ocupa a tela toda em mobile */
+      box-shadow: none; /* Remove a sombra 3D em mobile */
+      border-width: 0;
+  }
+  .quick-view-layout {
+      grid-template-columns: 1fr; /* Empilha as colunas */
+  }
+  .qv-image-area {
+      height: 400px;
+  }
+  .qv-details-area {
+      padding: 1.5rem;
+  }
+  .qv-actions {
+      flex-direction: column;
+      align-items: stretch; /* Estica o botão CTA */
+      gap: 1rem;
+  }
+  .qv-add-to-cart {
+      width: 100%;
+  }
+  .qv-full-details-link {
+      text-align: center;
+      width: 100%;
+  }
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}

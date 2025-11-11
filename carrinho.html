@@ -13,18 +13,36 @@
 
     <header>
         <div class="navbar">
-            <a href="index.html" class="logo">VTRSTORE</a>
+            <div href="index.html" class="logo">VTRSTORE</div>
+
+            <!-- Mobile Menu Toggles (Pure CSS) -->
             <input type="checkbox" id="menu-check" class="menu-check">
             <label for="menu-check" class="menu-toggle">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </label>
+
             <nav id="nav-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="colecao.html">Coleção</a></li>
+                    <li class="dropdown-trigger">
+                        <a href="#">VER TODOS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Coleções</a></li>
+                            <li><a href="camisetas.html">Camisetas</a></li>
+                            <li><a href="moletons.html">Moletons</a></li>
+                            <li><a href="jaquetas.html">Jaquetas</a></li>
+                            <li><a href="calcas.html">Calças</a></li>
+                            <li><a href="shorts.html">Shorts</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="colecao.html">Coleções</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="#" style="color: var(--accent-color);">Carrinho</a></li>
-                    <li><a href="#" class="nav-cta">Drops</a></li>
+                    <li><a href="colecao.html">Contato</a></li>
+                    <li><a class="nav-cta" href="#">Drops</a></li>
                 </ul>
             </nav>
         </div>
@@ -211,8 +229,7 @@
         // --- INICIALIZAÇÃO (Exemplo com 2 itens no carrinho) ---
         
         cartItems = [
-            { id: 1, name: "Camiseta Black Ice I", price: 149.00, img: "image/dropblackice1.jpg", size: "M", quantity: 1, color: "Preto" },
-            { id: 2, name: "Calça Streetwear cargo", price: 200.00, img: "image/calçasarja.jpg", size: "G", quantity: 2, color: "Cinza" },
+           
         ];
         
         renderCart();
